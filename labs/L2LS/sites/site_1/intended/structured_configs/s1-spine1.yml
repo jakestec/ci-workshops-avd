@@ -130,6 +130,15 @@ local_users:
   sha512_password: $6$ffa0115a3c828b71$NPH5ZBnIUVmNo4Wx3bl7ADKijlkRghBkLutN3cSuAfqj6mCAZv8Tn.ocuaMtSuD2ekLekwPK2MT0Pqpp8gvyF1
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC20fBXo25XAwWus3ZKz5sGdoCSSjuYfDcVcZs7r/1iAY33BDCv6TbbWfq8cbFCgg1tmZa5ZANL4N8xmMaREbnxEfkUkqPhfpwFYKHtI6D/95kOXem3O8yCE1rrLkZeM2R4QSVRLSz8D243r1ZxVFIqQeFNutJxIc6TihdIytDbSzGVgh/7ao1u+LcPwVIzcvCQ+uXiv5Ky7bV+KQ1SGJ4mvrnOiQTyz5Fg2jGwcVaert0OEKTmgoJIu1T5+NvnTN6LO8+uphoUgiuZWDqRwqjw8C3CW+BvAtYZUt9BJ1S1PPcQqXfvxVPsPOOET+4UOXfYjsvcHq9rgo0wVNJjwr9B
     arista@ottawa-atd-october26-5-84708aa4-eos
+logging:
+  vrfs:
+  - name: default
+    source_interface: Management0
+    hosts:
+    - name: 10.200.0.108
+      protocol: udp
+    - name: 10.200.1.108
+      protocol: udp
 loopback_interfaces:
 - name: Loopback0
   description: ROUTER_ID
